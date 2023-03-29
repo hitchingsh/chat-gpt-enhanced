@@ -106,6 +106,8 @@ function MainPage({ app, db }) {
 
   // Checks if user has free trial time
   const checkTrialExpired = async (user) => {
+    // setHasTrial(true);
+    // return;
     if (!user) return;
 
     const userRef = ref(db, `trials/${user.uid}`);
@@ -134,6 +136,7 @@ function MainPage({ app, db }) {
       // Update user
       setUser(user);
       // Give new conversation id
+      console.log("HH user.uid=" + user.uid)
       setConversationId(user.uid + Date.now());
       // Load users sub data
       loadSubscription();
@@ -195,9 +198,14 @@ function MainPage({ app, db }) {
     const lastSix = chatLogNew.slice(Math.max(chatLogNew.length - 6, 0));
     const messages = lastSix.map((message) => message.message).join("\n");
 
-    // Fetch response from the backend
+    console.log("selectedModel: " + selectedModel)
+    console.log("temperature: " + temperature)
+    console.log("messages:" + messages)
+
     const response = await fetch(
-      "https://chat-gpt-enhanced-backend.herokuapp.com",
+        // Fetch response from the backend
+        // "https://chat-gpt-enhanced-backend.herokuapp.com",
+      "http://localhost:5000",
       {
         method: "POST",
         headers: {
@@ -213,6 +221,10 @@ function MainPage({ app, db }) {
         }),
       }
     ).catch((error) => {
+      console.log("Got error fetching URL")
+      console.error("Error code:", error.code);
+      console.error("Error message:", error.message);
+  
       // Show response failed error
       setResponseFailed(true);
       setIsLoading(false);

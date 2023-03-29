@@ -42,7 +42,7 @@ function App() {
         }
       >
         <Routes>
-          <Route path="/" element={<MainPage app={app} db={db} />} />
+          <Route path="/chat-gpt-enhanced/" element={<MainPage app={app} db={db} />} />
 
           <Route path="/store" element={<StorePage app={app} />} />
 

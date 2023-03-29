@@ -30,7 +30,8 @@ const userRateLimit = rateLimit({
 
 // Configure CORS to allow requests from a specific domain
 const corsOptions = {
-  origin: "https://chat-gpt-enhanced.web.app",
+//  origin: "https://chat-gpt-enhanced.web.app",
+    origin: "http://localhost:3000"
 };
 
 app.use(bodyParser.json());
@@ -52,6 +53,8 @@ app.post("/", async (req, res) => {
 
   let result = ""
   let total_tokens = 0
+
+  console.log("model:" + model + " temperature " + temperature + " message:" + message)
 
   // From the command line call npm update openai to use gpt-4 and make sure your openai account has access as well
   if (model == "gpt-3.5-turbo" || model == "gpt-4") {
