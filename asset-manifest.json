@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/chat-gpt-enhanced/static/css/main.24a6998d.css",
+    "main.js": "/chat-gpt-enhanced/static/js/main.127d62ba.js",
+    "static/css/496.e01d67fa.chunk.css": "/chat-gpt-enhanced/static/css/496.e01d67fa.chunk.css",
+    "static/js/496.5f73edb0.chunk.js": "/chat-gpt-enhanced/static/js/496.5f73edb0.chunk.js",
+    "static/css/116.96831f06.chunk.css": "/chat-gpt-enhanced/static/css/116.96831f06.chunk.css",
+    "static/js/116.0db1ad62.chunk.js": "/chat-gpt-enhanced/static/js/116.0db1ad62.chunk.js",
+    "static/js/787.cda612ba.chunk.js": "/chat-gpt-enhanced/static/js/787.cda612ba.chunk.js",
+    "index.html": "/chat-gpt-enhanced/index.html",
+    "main.24a6998d.css.map": "/chat-gpt-enhanced/static/css/main.24a6998d.css.map",
+    "main.127d62ba.js.map": "/chat-gpt-enhanced/static/js/main.127d62ba.js.map",
+    "496.e01d67fa.chunk.css.map": "/chat-gpt-enhanced/static/css/496.e01d67fa.chunk.css.map",
+    "496.5f73edb0.chunk.js.map": "/chat-gpt-enhanced/static/js/496.5f73edb0.chunk.js.map",
+    "116.96831f06.chunk.css.map": "/chat-gpt-enhanced/static/css/116.96831f06.chunk.css.map",
+    "116.0db1ad62.chunk.js.map": "/chat-gpt-enhanced/static/js/116.0db1ad62.chunk.js.map",
+    "787.cda612ba.chunk.js.map": "/chat-gpt-enhanced/static/js/787.cda612ba.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.24a6998d.css",
+    "static/js/main.127d62ba.js"
+  ]
+}
