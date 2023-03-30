@@ -9,14 +9,14 @@ const Error404Page = React.lazy(() => import("./Pages/Error404Page"));
 const StorePage = React.lazy(() => import("./Pages/StorePage"));
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBGRLU71c5pzN5WNY5IZtjEuFIZsGdcEjY",
-  authDomain: "chat-gpt-enhanced.firebaseapp.com",
-  projectId: "chat-gpt-enhanced",
-  storageBucket: "chat-gpt-enhanced.appspot.com",
-  messagingSenderId: "869064780631",
-  appId: "1:869064780631:web:81faca4dc336a34935ac12",
-  measurementId: "G-7TSL92D0X3",
-  databaseURL: "https://chat-gpt-enhanced-default-rtdb.firebaseio.com/",
+  apiKey: "AIzaSyDny4CRo_gO83E9hqyfDiLVOnBFZgol55k",
+  authDomain: "hitchingsh.github.io",
+  projectId: "chat-gpt-enhanced-6cee0",
+  storageBucket: "chat-gpt-enhanced2.appspot.com", 
+  messagingSenderId: "658299656465", 
+  appId: "1:869064780631:web:81faca4dc336a34935ac12", // TODO
+  measurementId: "G-DQ3E8CRWE4",
+  databaseURL: "https://chat-gpt-enhanced-default-rtdb.firebaseio.com/", // TODO
 };
 
 const app = initializeApp(firebaseConfig);
